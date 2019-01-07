@@ -1,0 +1,425 @@
+page-home {
+  .f-header {
+    background: #01294A;
+    color: white;
+    height: 80px;
+    padding-left: 50px;
+    padding-right: 25px;
+    
+    a {
+      text-decoration: unset;
+      color: white;
+      white-space: nowrap;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: 10px 25px;
+      transition: 200ms;
+      border-radius: 5px;
+    }
+
+    a:first-child {
+      margin-left: 0;
+    }
+
+    a:hover {
+      background: rgba($color: map-get($map: $appcolors, $key: secondary), $alpha: 1);
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  .f-banner {
+    .big-title {
+      font-size: 5rem;
+      font-weight: bold;
+      color: white;
+    }
+    img{
+      width: 100%;
+    }
+    .semi-title {
+      font-size: 3.6rem;
+      color: white;
+      margin-top: 6px;
+    }
+
+    .small-font {
+      color: white;
+      margin-top: 10px;
+      font-size: 1.4rem;
+      line-height: 1.6em;
+      word-spacing: 1px;
+      color: lightgray;
+    }
+
+    .bottom-button {
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+    }
+
+    .f-button {
+      border-radius: 5px;
+      min-height: 4.6rem;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+
+      &.price {
+        background: map-get($map: $appcolors, $key: blue);
+      }
+
+      &.register {
+        background: map-get($map: $appcolors, $key: secondary);
+        // margin-left: 30px;
+      }
+    }
+  }
+
+  .f-features {
+    max-height: 800px;
+    overflow: hidden;
+   
+    img {
+      opacity: .1;
+      max-height: 640px;
+      overflow: hidden;
+    }
+
+    .overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 50px;
+
+      .semi-title {
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: map-get($map: $appcolors, $key: primary);
+        padding-bottom: 20px;
+      }
+
+      .circle {
+        height: 60px;
+        width: 60px;
+        background: map-get($map: $appcolors, $key: secondary);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          opacity: 1;
+        }
+      }
+
+      .f-item-row {
+        margin-top: 24px;
+
+        .f-row-content {
+          width: calc(100% - 70px);
+          margin-left: 20px;
+          padding-right: 40px;
+
+          .f-bold-title {
+            font-weight: bold;
+            font-size: 2rem;
+          }
+
+          .f-description {
+            color: #6E6E6E;
+            font-size: 1.5rem;
+            margin-top: 10px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .f-table-price {
+    padding: 50px;
+    // background: #f8f8f8;
+
+    .semi-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: map-get($map: $appcolors, $key: primary);
+      padding-bottom: 20px;
+    }
+
+    .f-menu-list {
+      margin-bottom: 20px;
+      border-bottom: 1px solid map-get($map: $appcolors, $key: primary);
+    }
+
+    .f-menu-item {
+      padding: 10px 20px;
+      font-size: 1.7rem;
+
+      &.selected {
+        background: map-get($map: $appcolors, $key: primary);
+        color: white;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+    }
+
+    .f-header-table {
+      background: map-get($map: $appcolors, $key: primary);
+      color: #F8E66B;
+      text-align: center;
+      font-size: 2.2rem;
+      font-weight: bold;
+      padding: 16px 20px;
+    }
+
+    .secondary-color {
+      color: #FF6D02;
+    }
+
+    td {
+      font-weight: unset;
+      border-left: .55px solid #ffffff;
+      border-bottom: .55px solid #ffffff;
+
+    }
+
+    td:last-child {
+      border-right: .55px solid #ffffff;
+    }
+
+    .f-name {
+      font-weight: bold;
+      font-size: 1.7rem;
+      color: #FF6D02;
+      text-align: center;
+      padding: 16px 10px;
+    }
+
+    .f-price {
+      font-weight: bold;
+      font-size: 1.7rem;
+      color: #FF6D02;
+      text-align: center;
+      padding: 16px 10px;
+
+    }
+
+    .f-cts {
+      text-align: center;
+      padding: 16px 10px;
+
+    }
+
+    .f-device {
+      text-align: center;
+      padding: 16px 10px;
+
+    }
+
+
+  }
+
+  .f-process {
+    padding: 50px;
+
+    .f-body-text {
+      border-left: 6px solid map-get($map: $appcolors, $key: primary);
+      padding-left: 20px;
+    }
+
+    // background: #f8f8f8;
+
+    .semi-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: map-get($map: $appcolors, $key: primary);
+      padding-bottom: 20px;
+    }
+
+    .step-title {
+      font-weight: bold;
+      color: map-get($map: $appcolors, $key: primary);
+      font-size: 1.8rem;
+    }
+
+    .step-des {
+      line-height: 1.8em;
+      font-size: 1.6rem;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  .f-register {
+    padding: 30px 50px;
+    background: whitesmoke;
+
+    .semi-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: map-get($map: $appcolors, $key: primary);
+      padding-bottom: 20px;
+      // text-align: center;
+    }
+
+    .f-form-title {
+      font-size: 1.5rem;
+      color: map-get($map: $appcolors, $key: primary);
+      font-weight: bold;
+      padding-top: 16px;
+
+      .red-color {
+        color: red;
+      }
+    }
+
+    .item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+    .item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+      box-shadow: none;
+    }
+
+    .item-md.item-block .item-inner {
+      border-bottom: none;
+    }
+
+    .item-md.item-input.item-input-has-focus .item-inner,
+    .item-md.item-input.input-has-focus .item-inner {
+      border: 1px solid map-get($map: $appcolors, $key: primary);
+      border-radius: 5px;
+      box-shadow: none;
+    }
+
+    .item-ios.item-input.item-input-has-focus .item-inner,
+    .item-ios.item-input.input-has-focus .item-inner {
+      border: 1px solid map-get($map: $appcolors, $key: primary);
+      border-radius: 5px;
+      box-shadow: none;
+    }
+
+    .text-input {
+      padding-left: 10px !important;
+      color: map-get($map: $appcolors, $key: primary);
+      font-size: 1.4rem;
+
+    }
+
+    .item {
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 6px rgba($color: map-get($map: $appcolors, $key: primary), $alpha: .2);
+    }
+
+    .f-district {
+      position: relative;
+      height: 44px;
+      margin: 10px 0;
+      background: white;
+      font-size: 1.4rem;
+      border-radius: 5px;
+      display: flex;
+      padding-left: 10px;
+      align-items: center;
+      box-shadow: 0 0 6px rgba($color: map-get($map: $appcolors, $key: primary), $alpha: .2);
+
+      .icon-container {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #6E6E6E;
+      }
+
+      color: #6E6E6E;
+
+      &.selected {
+        color: map-get($map: $appcolors, $key: primary);
+      }
+    }
+
+    .f-notification {
+      color: map-get($map: $appcolors, $key: primary);
+      padding-top: 10px;
+      font-size: 1.4rem;
+    }
+
+    .btn-send {
+      text-align: center;
+      padding: 16px 0;
+
+      .button {
+        background: map-get($map: $appcolors, $key: orange);
+        color: white;
+        border-radius: 5px;
+        min-width: 160px;
+      }
+    }
+
+    .box-shadow-container {
+      box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+      background: white;
+      border-radius: 5px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .f-question {
+    padding: 50px;  
+    background: whitesmoke;
+
+    .semi-title {
+      font-size: 3.6rem;
+      font-weight: bold;
+      color: map-get($map: $appcolors, $key: primary);
+      padding-bottom: 20px;
+    }
+
+    .question-container {
+      box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+      border-radius: 5px;
+      background: white;
+      margin: 10px 0;
+      padding: 16px 10px;
+      font-size: 1.5rem;
+      .icon-container {
+        right: 10px;
+        top: 16px;
+      }
+      &.selected{
+        background: map-get($map: $appcolors, $key: primary);
+        .question{
+          color: map-get($map: $appcolors, $key: yellow);
+        }
+        .answer{
+          color: white;
+        }
+        .icon-container{
+          color: white;
+        }
+      }
+      .question {
+        font-weight: bold;
+      }
+
+      .answer {
+        white-space: pre-wrap;
+        line-height: 1.6em;
+        font-size: 1.4rem;
+        padding-top: 16px;
+        color: #6E6E6E;
+      }
+    }
+    .btn-more-container{
+      padding: 16px 0;
+      .button{
+        background: map-get($map: $appcolors, $key: primary);
+        color: white;
+        border-radius: 5px;
+        min-width: 120px;
+      }
+    }
+  }
+}

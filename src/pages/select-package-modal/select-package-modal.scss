@@ -1,0 +1,172 @@
+page-select-package-modal {
+  .backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .button-container {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .button {
+      color: white;
+    }
+  }
+
+  .v-header {
+    padding: 16px;
+    background: map-get($map: $appcolors, $key: primary);
+  }
+
+  .v-title {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+
+  .b-register-container {
+    padding: 20px 0;
+
+    .button {
+      background: white;
+      color: map-get($map: $appcolors, $key: primary);
+      border: 1px solid;
+      box-shadow: none !important;
+      border-radius: 5px;
+      text-transform: uppercase;
+    }
+
+    .button:hover {
+      background: map-get($map: $appcolors, $key: orange);
+      color: white;
+      border: none;
+    }
+  }
+
+  .box-container {
+    text-align: center;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
+    background: white;
+    transform: scale(.96);
+    border-radius: 5px;
+
+    .img-container {
+      right: -20px;
+      top: -20px;
+    }
+
+    &.bigger {
+      transform: scale(1.04);
+      box-shadow: 0 8px 16px rgba($color: #000000, $alpha: .32);
+
+      .v-name {
+        color: map-get($map: $appcolors, $key: orange);
+      }
+
+      .v-price {
+        color: map-get($map: $appcolors, $key: orange);
+      }
+
+      .v-body {
+        .bold-color {
+          color: map-get($map: $appcolors, $key: orange);
+        }
+      }
+      .v-des{
+          font-weight: bold;
+      }
+
+      .b-register-container {
+
+        .button {
+          background: map-get($map: $appcolors, $key: orange);
+          color: white;
+          border: none;
+        }
+
+        .button:hover {
+          background: map-get($map: $appcolors, $key: primary);
+        }
+      }
+    }
+
+    .v-price_default {
+      color: gray;
+      padding-bottom: 10px;
+      text-decoration: line-through;
+    }
+
+    .v-name {
+      color: map-get($map: $appcolors, $key: primary);
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      padding: 10px 0;
+    }
+
+    .v-price {
+      color: map-get($map: $appcolors, $key: primary);
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    .v-border {
+      border-bottom: 1px solid whitesmoke;
+    }
+
+    .v-body {
+      text-align: left;
+      padding: 16px;
+      font-size: 1.4rem;
+      line-height: 1.8em;
+
+      .bold-color {
+        font-weight: bolder;
+        color: map-get($map: $appcolors, $key: primary);
+      }
+    }
+
+    .v-des {}
+  }
+
+  .popup-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: whitesmoke;
+  }
+
+  .row {
+    padding: 32px 16px;
+  }
+
+  .col {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  //   .col:first-child {
+  //     padding-left: 0;
+  //   }
+
+  //   .col:last-child {
+  //     padding-right: 0;
+  //   }
+  .scroll-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  ion-content.content {
+    background: rgba($color: #000000, $alpha: .4);
+  }
+}

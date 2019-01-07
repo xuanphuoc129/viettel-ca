@@ -1,0 +1,158 @@
+<!-- Generated template for the ViettelCaComponent component -->
+<div>
+  <ion-row>
+    <ion-col col-sm-6>
+      <div class="f-table-container">
+        <div class="f-header-table">Giá cước Viettel CA</div>
+        <table width="100%">
+          <tr>
+            <td *ngFor="let item of mViettelCA">
+              <div class="f-name">
+                {{item.name}}
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let item of mViettelCA">
+              <div class="f-price">
+                {{item.price}}
+              </div>
+            </td>
+          </tr>
+          <tr>
+              <td *ngFor="let item of mViettelCA">
+                <div class="f-des">
+                  {{item.usb}}
+                </div>
+              </td>
+            </tr>
+          <!-- <tr>
+            <td *ngFor="let item of mViettelCA"> 
+              <div class="f-des" *ngFor="let des of item.getArrayDes()">
+                <i>- {{des}}</i>
+              </div>
+            </td>
+          </tr> -->
+        </table>
+
+        <div class="f-button-register">
+            <button ion-button full (click)="onClickRegister(1)">ĐĂNG KÝ</button>
+        </div>
+      </div>
+
+    </ion-col>
+
+    <ion-col col-sm-6>
+      <div class="f-table-container">
+        <div class="f-header-table">Gia hạn Viettel-CA</div>
+        <table width="100%">
+          <tr>
+            <td *ngFor="let item of mViettelCAContinue">
+              <div class="f-name">{{item.name}}</div>
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let item of mViettelCAContinue">
+              <div class="f-price">{{item.price}}</div>
+            </td>
+          </tr>
+          <tr>
+              <td *ngFor="let item of mViettelCAContinue">
+                <div class="f-des">Đăng ký online – 15 phút xong</div>
+              </td>
+            </tr>
+          <!-- <tr>
+            <td *ngFor="let item of mViettelCAContinue">
+              <div class="f-des">
+                <i>{{item.des}}</i>
+              </div>
+            </td>
+          </tr> -->
+        </table>
+
+        <div class="f-button-register">
+            <button ion-button full (click)="onClickRegister(2)">ĐĂNG KÝ</button>
+        </div>
+      </div>
+
+    </ion-col>
+
+    <ion-col col-sm-6 style="margin-top: 20px">
+        <div class="f-table-container">
+          <div class="f-header-table">Giá cước Viettel CA + BHXH</div>
+          <table width="100%">
+            <tr>
+              <td *ngFor="let item of mViettelCACombo">
+                <div class="f-name">
+                  {{item.name}}
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td *ngFor="let item of mViettelCACombo">
+                <div class="f-price">
+                  {{item.price}}
+                </div>
+              </td>
+            </tr>
+            <tr>
+                <td *ngFor="let item of mViettelCACombo">
+                  <div class="f-des">
+                    {{item.getArrayDes()[0]}}
+                  </div>
+                </td>
+              </tr>
+            <!-- <tr>
+              <td *ngFor="let item of mViettelCA"> 
+                <div class="f-des" *ngFor="let des of item.getArrayDes()">
+                  <i>- {{des}}</i>
+                </div>
+              </td>
+            </tr> -->
+          </table>
+  
+          <div class="f-button-register">
+              <button ion-button full (click)="onClickRegister(3)">ĐĂNG KÝ</button>
+          </div>
+        </div>
+  
+      </ion-col>
+
+      <ion-col col-sm-6 style="margin-top: 20px">
+          <div class="f-table-container">
+            <div class="f-header-table">Gia hạn Viettel-CA + BHXH</div>
+            <table width="100%">
+              <tr>
+                <td *ngFor="let item of mViettelCAComboContinue">
+                  <div class="f-name">{{item.name}}</div>
+                </td>
+              </tr>
+              <tr>
+                <td *ngFor="let item of mViettelCAComboContinue">
+                  <div class="f-price">{{item.price}}</div>
+                </td>
+              </tr>
+              <tr>
+                  <td *ngFor="let item of mViettelCAComboContinue">
+                      <div class="f-des">
+                        {{item.getArrayDes()[0]}}
+                      </div>
+                    </td>
+                </tr>
+              <!-- <tr>
+                <td *ngFor="let item of mViettelCAContinue">
+                  <div class="f-des">
+                    <i>{{item.des}}</i>
+                  </div>
+                </td>
+              </tr> -->
+            </table>
+    
+            <div class="f-button-register">
+                <button ion-button full (click)="onClickRegister(4)">ĐĂNG KÝ</button>
+            </div>
+          </div>
+    
+        </ion-col>
+  </ion-row>
+</div>

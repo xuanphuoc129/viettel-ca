@@ -1,0 +1,30 @@
+viettel-ca {
+    .f-table-container{
+        // padding: 10px;
+        position: relative;
+        background: #F3F7F8;
+        overflow: hidden;
+        height: 100%;
+        padding-bottom: 70px;
+        width: calc(100% - 20px);
+        margin: auto;
+        .f-button-register{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: calc(100% - 20px);
+            .button{
+                background: map-get($map: $appcolors, $key: primary);
+                min-height: 50px;
+                border-radius: 5px;
+            }
+            .button:hover{
+                color: #F8E66B;
+            }
+        }
+    }
+    .f-des {
+        text-align: center;
+        padding: 6px 10px;
+      }
+}

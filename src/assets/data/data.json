@@ -1,0 +1,225 @@
+{
+  "viettel-ca": [{
+      "id": 1,
+      "name": "Gói 1 năm",
+      "price": "1.400.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel",
+      "type": 1,
+      "isBig": false,
+      "price_default": "1.826.000đ"
+    },
+    {
+      "id": 2,
+      "name": "Gói 2 năm",
+      "price": "1.850.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel",
+      "type": 1,
+      "isBig": false,
+      "price_default": "2.741.000đ"
+
+    },
+    {
+      "id": 3,
+      "name": "Gói 3 năm",
+      "price": "2.150.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel",
+      "type": 1,
+      "isBig": true,
+      "price_default": "3.109.000đ"
+
+    },
+    {
+      "id": 4,
+      "name": "Gói 1 năm",
+      "price": "1.100.000đ",
+      "type": 2,
+      "price_default": "1.276.000đ",
+      "isBig": false,
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 5,
+      "name": "Gói 2 năm",
+      "price": "1.699.000đ",
+      "type": 2,
+      "price_default": "2.191.000đ",
+      "isBig": false,
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 6,
+      "name": "Gói 3 năm",
+      "price": "2.099.000đ",
+      "type": 2,
+      "price_default": "2.909.000đ",
+      "isBig": true,
+      "des": "Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 7,
+      "name": "Gói 1 năm",
+      "price": "1.600.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "type": 3,
+      "price_default": "1.826.000đ",
+      "isBig": false,
+      "des": "Tặng thêm 06 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 8,
+      "name": "Gói 2 năm",
+      "price": "2.200.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "type": 3,
+      "price_default": "2.741.000đ",
+      "isBig": false,
+      "des": "Tặng thêm 09 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 9,
+      "name": "Gói 3 năm",
+      "price": "2.500.000đ",
+      "usb": "Miễn Phí USB Token Trị giá 500.000đ",
+      "type": 3,
+      "price_default": "3.109.000đ",
+      "isBig": true,
+      "des": "Tặng thêm 12 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký và giao hàng tận nhà; Trang bị thiết bị chính hãng Viettel – Bảo mật cao; Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 10,
+      "name": "Gói 1 năm",
+      "price": "1.200.000đ",
+      "type": 4,
+      "price_default": "",
+      "isBig": false,
+      "des": "Tặng thêm 06 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 11,
+      "name": "Gói 2 năm",
+      "price": "1.860.000đ",
+      "type": 4,
+      "price_default": "",
+      "isBig": false,
+      "des": "Tặng thêm 09 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    },
+    {
+      "id": 12,
+      "name": "Gói 3 năm",
+      "price": "2.100.000đ",
+      "type": 4,
+      "price_default": "",
+      "isBig": true,
+      "des": "Tặng thêm 12 Tháng Sử Dụng; Giá trên đã bao gồm 10% VAT; Xuất hóa đơn VAT theo giá niêm yết; Đăng ký online – 15 phút xong;  Giao dịch trực tiếp với nhân viên Viettel"
+    }
+  ],
+  "question": [{
+      "STT": "1",
+      "question": "Chữ ký số là gì? Tên tiếng anh là gì?",
+      "answer": "Chữ ký số (tên tiếng anh là digital signature) là một dạng chữ ký điện tử (electronic signature). Chữ ký số được tạo ra bởi các hành vi người ký. Nó được dùng như một chữ ký cá nhân hoặc thay con dấu  của tổ chức, công ty. Do vậy, chữ ký số cũng được công nhận về mặt pháp lý"
+    },
+    {
+      "STT": "2",
+      "question": "Chữ ký số dùng để làm gì?",
+      "answer": "Chữ ký số được dùng trong các giao dịch điện tử: nhằm xác định được người chủ của một dữ liệu điện tử và dữ liệu đó có bị thay đổi hay không."
+    },
+    {
+      "STT": "3",
+      "question": "Ứng dụng thực tế của chữ ký số?",
+      "answer": "Theo các quy định hiện hành, khi nộp thuế qua mạng, kê khai bảo hiểm xã hội, hoặc sử dụng hải quan điện tử các doanh nghiệp, tổ chức phải sử dụng chữ ký số."
+    },
+    {
+      "STT": "4",
+      "question": "Có bao nhiêu nhà cung cấp chữ ký số tại Việt Nam?",
+      "answer": "Tính đến tháng 12/2018 có 8 nhà cung cấp chữ ký số đang hoặc động bao gồm : VinaCA, Bkav, Viettel, VNPT, FPT, NewCA, Nacencomm, Safe-CA"
+    },
+    {
+      "STT": "5",
+      "question": "Các loại chứng thư số được sử dụng để ký số?",
+      "answer": "+ Chứng thư số được cấp bởi tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng.\n+ Chứng thư số được cấp bởi tổ chức cung cấp dịch vụ chứng thực chữ ký số chuyên dùng phục vụ các cơ quan thuộc hệ thống chính trị.\n+ Chứng thư số nước ngoài được công nhận.\n+ Chứng thư số nước ngoài được chấp nhận tại Việt Nam.\n+ Chứng thư số nước ngoài được chấp nhận trong giao dịch quốc tế."
+    },
+    {
+      "STT": "6",
+      "question": "Ai có thể đăng ký chữ ký số?",
+      "answer": "Các cá nhân, tổ chức, doanh nghiệp đều có thể đăng ký chữ ký số"
+    },
+    {
+      "STT": "7",
+      "question": "Chữ ký số giá bao nhiêu?",
+      "answer": "Tùy từng gói cước của các nhà cung cấp sẽ có giá khác nhau"
+    },
+    {
+      "STT": "8",
+      "question": "Đăng ký chữ ký số ở đâu?",
+      "answer": "Cá nhân, tổ chức có thể liên hệ đến nhà cung cấp hoặc qua số đt: 096.2018.555 để được tư vấn các thủ tục cần thiết và hỗ trợ đăng ký mới."
+    },
+    {
+      "STT": "9",
+      "question": "Mỗi cá nhân doanh nghiệp đăng ký được bao nhiêu chữ ký số?",
+      "answer": "Các cá nhân, tổ chức có thể đăng ký nhiều chữ ký số của các nhà cung cấp khác nhau."
+    },
+    {
+      "STT": "10",
+      "question": "Có thể chuyển đổi nhà cung cấp chữ ký số được không?",
+      "answer": "Nếu muốn chuyển đổi nhà cung cấp chữ ký số quý khách liên hệ tới số đt: 096.2018.555 để được tư vấn các thủ tục cần thiết."
+    },
+    {
+      "STT": "11",
+      "question": "Cách kiểm tra thời hạn chữ ký số?",
+      "answer": "Quý khách hàng liên hệ tới nhà cung cấp hoặc có thể kiểm tra trực tiếp trên Token"
+    },
+    {
+      "STT": "12",
+      "question": "Gia hạn chữ ký số như thế nào?",
+      "answer": "Để gia hạn chữ ký số quý khách liên hệ đến nhà cung cấp hoặc qua số đt: 096.2018.555 để được tư vấn các thủ tục cần thiết."
+    },
+    {
+      "STT": "13",
+      "question": "Sau khi gia hạn chữ ký số ta phải làm gì?",
+      "answer": "Sau khi gia hạn ta phải cập nhật lại serial mới lên hệ thống Thuế , BHXH, Hải quan…."
+    },
+    {
+      "STT": "14",
+      "question": "Tôi có một USB Token, xin hỏi có thể sử dụng được cho 2 doanh nghiệp, tổ chức được không?",
+      "answer": "Về mặt pháp lý, mỗi Chứng thư số được coi như là con dấu của doanh nghiệp. Cách quản lý Chứng thư số giống như quản lý con dấu.\nVì vậy các doanh nghiệp khác nhau phải sử dụng USB token khác nhau để tránh việc sử dụng “con dấu” Chứng thư số của nhau một cách bất hợp pháp.\nHơn nữa, giá của USB token là không phải là lớn đối với doanh nghiệp, cá nhân – nên không phải sử dụng chung USB token."
+    },
+    {
+      "STT": "15",
+      "question": "Tôi gõ mật khẩu để sử dụng USB Token nhưng bị sai, dẫn tới thiết bị của tôi bị khóa. Hãy cho biết cách giải quyết.",
+      "answer": "Nếu USB Token bị khóa do gõ sai mật khẩu hoặc vì bất cứ nguyên nhân gì, đề nghị quý khách liên hệ với nhà cung cấp dịch vụ chữ ký số đã đăng ký trước đó để được trợ giúp."
+    },
+    {
+      "STT": "16",
+      "question": "USB Token chữ ký số có thể sử dụng mật khẩu tiếng Việt không?",
+      "answer": "Mật khẩu (PIN code) bảo vệ USB token không cho phép sử dụng tiếng Việt.\nTrước khi đặt nhập mật khẩu hoặc sử dụng mật khẩu để ký điện tử quý khách cần tắt các bộ gõ tiếng Việt để tránh trường hợp token bị khóa do gõ sai mật khẩu 3 lần."
+    },
+    {
+      "STT": "17",
+      "question": "Đổi mật khẩu USB token như thế nào?",
+      "answer": "Mật khẩu (PIN code) của thiết bị token dùng để bảo vệ tránh việc sử dụng token trái phép gây nên thiết hại cho doanh nghiệp. Quý khách nên thường xuyên thay đổi mật khẩu để tránh bị lộ. Việc thay đổi mật khẩu quý khách thực hiện trên phần mềm quản lý thiết bị USB token đã được cài đặt trước đó. Lưu ý quý khách cần tắt chế độ gõ tiếng Việt trước khi đổi mật khẩu."
+    },
+    {
+      "STT": "18",
+      "question": "Tôi làm hỏng hoặc mất thiết bị token thì tôi phải làm gì? Thủ tục cấp lại USB token như thế nào?",
+      "answer": "Do tính chất an toàn của chữ ký số, USB token lưu trữ và bảo vệ khóa bí mật của người dùng. Nếu doanh nghiệp bị mất hoặc làm hư USB token thì cần liên hệ với nhà cung cấp chữ ký số để làm thủ tục hủy chứng thư số cũ, mua lại USB token và cấp lại chứng thư số mới."
+    },
+    {
+      "STT": "19",
+      "question": "VBHXH Viettel là gì?",
+      "answer": "vBHXH là Phần mềm kê khai BHXH của Viettel cung cấp cho các công ty, tổ chức kê khai Bảo Hiểm Xã Hội, Bảo hiểm Y Tế điện tử qua mạng.\nvBHXH là công cụ không thể thiếu để quản lý, lập thủ tục bảo hiểm xã hội, bảo hiểm y tế, bảo hiểm thất nghiệp… phù hợp cho mọi loại hình doanh nghiệp và tổ chức."
+    },
+    {
+      "STT": "20",
+      "question": "Tầm quan trọng thiết yếu của BHXH",
+      "answer": "Tầm quan trọng của việc đóng bảo hiểm xã hội tại Việt Nam\nBảo hiểm xã hội là sự đảm bảo và bù đắp 1 phần thu nhập cũng như kinh phí cho người lao động khi họ bị tại nạn lao động, bệnh nghề nghiệp, thai sản, ốm đau, hưu trí hay tử tuất.\nNgày nay hầu hết người lao động ở Việt Nam đều tham gia bảo hiểm xã hội vì những lợi ích cộng đồng đem lại, đây được xem như mấu chốt của an sinh xã hội.\nTăng cường mối quan hệ giữa Nhà nước, người sử dụng lao động và người lao động, mối quan hệ ràng buộc, chặt chẽ, chia sẽ trách nhiệm, chia sẽ rủi ro chỉ có được trong quan hệ của BHXH."
+    },
+    {
+      "STT": "21",
+      "question": "Muốn đăng ký dịch vụ VBHXH bằng cách nào?",
+      "answer": "Khách hàng có thể đăng ký trực tiếp qua Website: https://cuahangviettel.vn\nGửi Email đăng ký : toanvd7@viettel.com.vn\nCó thể liên hệ trực tiếp qua hotline : 096.2018.555  Để được tư vấn, hỗ trợ một cách tốt nhất"
+    }
+  ]
+}

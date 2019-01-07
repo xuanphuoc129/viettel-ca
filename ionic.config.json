@@ -1,0 +1,7 @@
+{
+  "name": "viettel-ca",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,23 @@
+<!-- Generated template for the ViettelCaPackageComponent component -->
+<div>
+  <div class="box-container">
+    <div class="v-type">
+      <span *ngIf="item.type == 1">Gói cước Viettel CA</span>
+      <span *ngIf="item.type == 2">Gia hạn Viettel CA</span>
+      <span *ngIf="item.type == 3">Gói cước Viettel CA + BHXH</span>
+      <span *ngIf="item.type == 4">Gia hạn Viettel CA + BHXH</span>
+    </div>
+    <div class="v-border">
+      <div class="v-name">{{item.name}}</div>
+      <div class="v-price">{{item.price}}</div>
+      <div class="v-price_default" *ngIf="item.price_default">Giá niêm yết {{item.price_default}}</div>
+    </div>
+    <div class="v-body">
+      <div class="v-usb bold-color">{{item.usb}}</div>
+      <div class="v-des" [class.bold-color]="i == 0 && mType > 3" *ngFor="let des of item.getArrayDes(); let i = index">
+        -
+        <i>{{des}}</i>
+      </div>
+    </div>
+  </div>
+</div>

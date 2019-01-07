@@ -1,0 +1,57 @@
+<!--
+  Generated template for the SelectPackageModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+<ion-content>
+  <div class="backdrop" navPop tappable></div>
+  <div class="popup-container a1-relative a1-z-10">
+    <div class="v-header a1-relative" text-center>
+      <div class="button-container a1-absolute">
+        <button ion-button clear icon-only navPop>
+          <ion-icon name="close"></ion-icon>
+        </button>
+      </div>
+
+      <div class="v-title">
+        <span *ngIf="mType == 1">Giá cước Viettel CA</span>
+        <span *ngIf="mType == 2">Gia hạn Viettel CA</span>
+        <span *ngIf="mType == 3">Giá cước Viettel CA + BHXH</span>
+        <span *ngIf="mType == 4">Gia hạn Viettel CA + BHXH</span>
+      </div>
+    </div>
+
+    <ion-row>
+      <ion-col col-4 *ngFor="let item of mDatas">
+        <div class="box-container a1-relative" [class.bigger]="item.isBig">
+          <div class="img-container a1-absolute" *ngIf="item.isBig">
+            <img src="./assets/imgs/KhuyenDung.png" alt="">
+          </div>
+          <div class="v-border">
+            <div class="v-name">{{item.name}}</div>
+            <div class="v-price">{{item.price}}</div>
+            <div class="v-price_default" *ngIf="item.price_default">Giá niêm yết {{item.price_default}}</div>
+          </div>
+          <div class="v-body">
+            <div class="v-usb bold-color">{{item.usb}}</div>
+            <div class="v-des" [class.bold-color]="i == 0 && mType > 3" *ngFor="let des of item.getArrayDes(); let i = index">
+              -
+              <i >{{des}}</i>
+            </div>
+          </div>
+
+          <div class="b-register-container">
+            <button ion-button (click)="onClickRegister(item)">
+              Đăng ký
+              
+            </button>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
