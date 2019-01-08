@@ -29,6 +29,8 @@ export class HomePage {
   mQuestions2: Array<Questions>  = [];
   mQuestionSelected: number = -1;
   mMode: number = 1;
+
+  mCurrentIndex : number = 0;
   constructor(
     public mAppModule: AppModuleProvider,
     public navCtrl: NavController) {
@@ -36,6 +38,40 @@ export class HomePage {
     this.mAppModule.onLoadAppConfig().then(() => {
       this.onLoadConfigSuccess();
     })
+  }
+
+  onSwipe(e){
+    let divID = "benifitID";
+    let direction = e.direction;
+    let distance = 0;
+    let element = document.getElementById(divID);
+    let maxScrollLeft = element.scrollWidth - element.clientWidth;
+
+    if(direction == 2){
+      console.log("left");
+      
+      if(this.mCurrentIndex < 2){
+        this.mCurrentIndex ++;
+        distance = (screen.width - 20) * this.mCurrentIndex;
+      }else{
+        this.mCurrentIndex = 0;
+        distance = 0;
+      }
+    }else if(direction == 4){
+      if(this.mCurrentIndex > 0){
+        this.mCurrentIndex --;
+        distance = (screen.width - 20)  * this.mCurrentIndex;
+      }else{
+        this.mCurrentIndex = 2;
+        distance = maxScrollLeft;
+      }
+    }
+
+   
+
+    console.log(distance);
+    if(distance > maxScrollLeft) distance = maxScrollLeft;
+    this.mAppModule.getScrollController().doScrollLeft(divID,distance);
   }
 
   onChangeMode(number){

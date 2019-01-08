@@ -5,7 +5,7 @@ page-home {
     height: 80px;
     padding-left: 50px;
     padding-right: 25px;
-    
+
     a {
       text-decoration: unset;
       color: white;
@@ -34,9 +34,11 @@ page-home {
       font-weight: bold;
       color: white;
     }
-    img{
+
+    img {
       width: 100%;
     }
+
     .semi-title {
       font-size: 3.6rem;
       color: white;
@@ -78,7 +80,7 @@ page-home {
   .f-features {
     max-height: 800px;
     overflow: hidden;
-   
+
     img {
       opacity: .1;
       max-height: 640px;
@@ -165,6 +167,8 @@ page-home {
       }
     }
 
+
+
     .f-header-table {
       background: map-get($map: $appcolors, $key: primary);
       color: #F8E66B;
@@ -217,6 +221,8 @@ page-home {
       padding: 16px 10px;
 
     }
+
+
 
 
   }
@@ -367,7 +373,7 @@ page-home {
   }
 
   .f-question {
-    padding: 50px;  
+    padding: 50px;
     background: whitesmoke;
 
     .semi-title {
@@ -384,22 +390,28 @@ page-home {
       margin: 10px 0;
       padding: 16px 10px;
       font-size: 1.5rem;
+
       .icon-container {
         right: 10px;
         top: 16px;
       }
-      &.selected{
+
+      &.selected {
         background: map-get($map: $appcolors, $key: primary);
-        .question{
+
+        .question {
           color: map-get($map: $appcolors, $key: yellow);
         }
-        .answer{
+
+        .answer {
           color: white;
         }
-        .icon-container{
+
+        .icon-container {
           color: white;
         }
       }
+
       .question {
         font-weight: bold;
       }
@@ -412,13 +424,79 @@ page-home {
         color: #6E6E6E;
       }
     }
-    .btn-more-container{
+
+    .btn-more-container {
       padding: 16px 0;
-      .button{
+
+      .button {
         background: map-get($map: $appcolors, $key: primary);
         color: white;
         border-radius: 5px;
         min-width: 120px;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .sm-hidden{
+      display: none !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .f-question{
+      padding: 10px !important;
+      .semi-title{
+        text-align: center;
+        font-size: 2rem !important;
+        padding-bottom: 10px !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 10px;
+        text-align: left;
+      }
+      .btn-more-container{
+        padding: 10px 0 !important;  
+      }
+    }
+    .f-process{
+      padding: 10px !important;
+      .f-body-text{
+        border-left: 0 !important;
+        padding-left: 0px !important; 
+      }
+      .semi-title {
+        text-align: center;
+        font-size: 2rem !important;
+        padding-bottom: 20px !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 10px;
+        text-align: left;
+      }
+      
+    }
+    .m-table-price {
+      background: whitesmoke !important;
+    }
+
+    .f-register {
+      padding: 10px !important;
+      background: white !important;
+      .semi-title {
+        text-align: center;
+        font-size: 2rem !important;
+        padding-bottom: 20px !important;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 10px;
+        text-shadow: 1px 2px 4px rgba($color: map-get($map: $appcolors, $key: yellow), $alpha: .6);
+      }
+    }
+
+    .f-register {
+      .row {
+        flex-direction: column-reverse;
       }
     }
   }

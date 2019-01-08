@@ -8,6 +8,7 @@ import { ViettelCAManager } from './viettel-ca';
 import { DistrictManager } from '../core/District';
 import { StorageController } from '../core/storage';
 import { Storage } from '@ionic/storage';
+import { ScrollController } from '../core/scroll-controller';
 
 declare var Email;
 
@@ -23,6 +24,8 @@ export class AppModuleProvider {
   private mEmailConfig: EmailConfig = null;
   private mDistrictManager : DistrictManager = null;
   private mStorageController: StorageController;
+  private mScrollController: ScrollController = new ScrollController();
+
   phone_number: string = "0962018555";
   constructor(
     public mStorage: Storage,
@@ -31,6 +34,10 @@ export class AppModuleProvider {
     this.mAppConfig = new AppConfig();
     this.mEmailConfig = new EmailConfig();
     this.mDistrictManager = new DistrictManager();
+  }
+
+  public getScrollController(){
+    return this.mScrollController;
   }
 
   public getStorageController() {

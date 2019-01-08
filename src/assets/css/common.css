@@ -568,7 +568,7 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
   .sm-hidden {
-    display: none!important;
+    display: none !important;
   }
 
   .sm-show-block {

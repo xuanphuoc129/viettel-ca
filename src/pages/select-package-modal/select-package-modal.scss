@@ -78,8 +78,9 @@ page-select-package-modal {
           color: map-get($map: $appcolors, $key: orange);
         }
       }
-      .v-des{
-          font-weight: bold;
+
+      .v-des {
+        font-weight: bold;
       }
 
       .b-register-container {
@@ -143,10 +144,7 @@ page-select-package-modal {
     background: whitesmoke;
   }
 
-  .row {
-    padding: 32px 16px;
-  }
-
+ 
   .col {
     padding-bottom: 0;
     padding-top: 0;
@@ -159,14 +157,39 @@ page-select-package-modal {
   //   .col:last-child {
   //     padding-right: 0;
   //   }
-  .scroll-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+
+
+  @media (max-width: 576px) {
+    .row{
+      flex-direction: column-reverse;
+      padding: 0 10px;
+      padding-bottom: 16px;
+    }
+    .box-container{
+      transform: scale(.98);
+      &.bigger{
+        transform: scale(1);
+      }
+    }
+    .col{
+      margin-top: 16px;
+    }
   }
 
-  ion-content.content {
-    background: rgba($color: #000000, $alpha: .4);
+  @media (min-width: 576px) {
+    .scroll-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    ion-content.content {
+      background: rgba($color: #000000, $alpha: .4) !important;
+    }
+    .row {
+      padding: 32px 16px;
+    }
+  
   }
 }
