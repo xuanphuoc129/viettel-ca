@@ -1,0 +1,77 @@
+<!--
+  Generated template for the ModalDowloadPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content >
+  <div class="backdrop " navPop tappable></div>
+
+  <div class="popup-container a1-relative a1-z-10 ">
+
+    <div [hidden]="mId == 1">
+      <div class="title-dowload">
+        Download phần mềm, tài liệu liên quan đến dịch vụ HĐĐT
+
+        <button ion-button clear color="dark" class="close-btn" navPop icon-only>
+          <ion-icon name="close"></ion-icon>
+        </button>
+
+      </div>
+
+      <table width="100%">
+        <tr class="bg-th">
+          <th class="stt">STT</th>
+          <th>Tiêu đề</th>
+          <th class="dowload-column">Tải về</th>
+        </tr>
+        <tr *ngFor="let item of items1; let i = index" [class.white-bg]="i%2 == 0">
+          <td text-center>{{i+1}}</td>
+          <td>{{item.name}}</td>
+          <td text-center>
+            <a target="_blank" rel="nofollow" href="{{item.url}}">Tải về</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div [hidden]="mId == 0">
+      <div class="title-dowload">
+          Văn bản pháp lý - Quy định liên quan
+
+        <button ion-button clear color="dark" class="close-btn" navPop icon-only>
+          <ion-icon name="close"></ion-icon>
+        </button>
+
+      </div>
+
+      <table width="100%">
+        <tr>
+          <th class="stt">STT</th>
+          <th class="xs-hidden">Số/Ký hiệu</th>
+          <th class="xs-hidden">Ngày ban hành</th>
+          <th class="xs-hidden">Cơ quan ban hành</th>
+          <th>Tên văn bản</th>
+          <th class="dowload-column">Tải về</th>
+        </tr>
+        <tr *ngFor="let item of items2; let i = index" [class.white-bg]="i%2 == 0">
+          <td text-center>{{i+1}}</td>
+          <td text-center class="xs-hidden">{{item.symbol}}</td>
+          <td text-center class="xs-hidden">{{item.date}}</td>
+          <td text-center class="xs-hidden">{{item.company}}</td>
+          <td>{{item.name}}</td>
+          <td text-center>
+            <a target="_blank" rel="nofollow" href="{{item.url}}">Tải về</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+
+
+</ion-content>

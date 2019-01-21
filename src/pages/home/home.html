@@ -5,9 +5,9 @@
     </ion-col>
     <ion-col>
       <div class="a3-container a3-items-center a3-justify-end">
-        <a href="#">Quy định</a>
+        <a href="#" (click)="onClickDowload(1)">Quy định</a>
         <a href="#">Hướng dẫn</a>
-        <a href="https://chukyviettel.com/download">Tải về</a>
+        <a href="#" (click)="onClickDowload(0)">Tải về</a>
         <a href="#">Tin tức</a>
       </div>
     </ion-col>
@@ -26,6 +26,8 @@
 </ion-header>
 
 <ion-content>
+
+
   <div class="sm-hidden f-banner-mobile a1-relative">
     <div class="banner-overlay-mobile a1-absolute">
       <div class="big-title">VIETTEL - CA</div>
@@ -274,14 +276,8 @@
     </div>
   </div>
 
-  <div class="m-table-price sm-hidden" id="tablePriceId">
-    <div class="semi-title">BẢNG GIÁ</div>
-    <div *ngIf="!isLoading">
-      <viettel-ca (onRegister)="onClickRegister($event)"></viettel-ca>
-    </div>
-  </div>
 
-  <div class="f-table-price xs-hidden" id="tablePriceId">
+  <div class="f-table-price" id="tablePriceId">
     <div class="semi-title">BẢNG GIÁ</div>
     <!-- <div class="a3-container a3-items-center f-menu-list">
       <div class="f-menu-item" [class.selected]="menuID == 1" (click)="onClickItem(1)" tappable>USB TOKEN CỦA CÁ NHÂN</div>
@@ -416,8 +412,8 @@
     <div class="list-container " *ngIf="mMode == 1">
       <div class="question-container a1-relative" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions2; let i = index"
         (click)="onClickQuestion(i)">
-        <div class="question">{{i+1}}. {{item.question}}</div>
-        <div class="answer" *ngIf="mQuestionSelected == i">{{item.answer}}</div>
+        <div class="question" [innerHtml]="item.question"></div>
+        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
         <div class="icon-container a1-absolute">
           <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
           <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
@@ -428,8 +424,8 @@
     <div class="list-container " *ngIf="mMode == 2">
       <div class="question-container" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions; let i = index"
         (click)="onClickQuestion(i)">
-        <div class="question">{{i+1}}. {{item.question}}</div>
-        <div class="answer" *ngIf="mQuestionSelected == i">{{item.answer}}</div>
+        <div class="question" [innerHtml]="item.question"></div>
+        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
         <div class="icon-container a1-absolute">
           <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
           <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
@@ -442,4 +438,17 @@
       <button ion-button *ngIf="mMode == 2" (click)="onChangeMode(1)">Thu gọn</button>
     </div>
   </div>
+
+  <ion-fab bottom right>
+    <button ion-fab (click)="onClickAddFab()">
+      <ion-icon name="add" class="animated pulse"></ion-icon>
+    </button>
+  </ion-fab>
+
+
+
+  <div class="fake-customer">
+    <fake-customer></fake-customer>
+  </div>
+
 </ion-content>

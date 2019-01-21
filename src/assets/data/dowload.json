@@ -1,0 +1,69 @@
+{
+    "Sheet1": [
+        {
+            "STT": "1",
+            "name": "Mẫu hóa đơn bán hàng và biên lai",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hd_gtgt_dien_va_nuoc.zip"
+        },
+        {
+            "STT": "2",
+            "name": "Mẫu hóa đơn giá trị gia tăng điện và nước",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hd_gtgt_dien_va_nuoc.zip"
+        },
+        {
+            "STT": "3",
+            "name": "Mẫu hóa đơn giá trị gia tăng thuế dòng",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hd_gtgt_thue_dong.zip"
+        },
+        {
+            "STT": "4",
+            "name": "Mẫu hóa đơn giá trị gia tăng thuế tổng có chiết khấu",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hd_gtgt_thue_tong_co_chiet_khau.zip"
+        },
+        {
+            "STT": "5",
+            "name": "Mẫu hóa đơn giá trị gia tăng thuế tổng khác",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hd_gtgt_thue_tong_khac.zip"
+        },
+        {
+            "STT": "6",
+            "name": "Danh sách mẫu hóa đơn trên hệ thống thật và hệ thống demo",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/mau_hoa_don.xls"
+        },
+        {
+            "STT": "7",
+            "name": "Hướng dẫn cấu hình user WEBSERVICE",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/Huong_dan_cau_hinh_webservice.doc"
+        },
+        {
+            "STT": "8",
+            "name": "Tài liệu mô tả Webservice Hóa đơn điện tử",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/tl_mo_ta_webservice_hoadondientu_doitac_.doc"
+        },
+        {
+            "STT": "9",
+            "name": "Danh sách lỗi thường gặp khi tích hợp",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/list_error.xlsx"
+        },
+        {
+            "STT": "10",
+            "name": "Example_API",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/invoiceclient.zip"
+        },
+        {
+            "STT": "11",
+            "name": "Hướng dẫn sử dụng hóa đơn điện tử",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/HDSD_HDDT.doc"
+        },
+        {
+            "STT": "12",
+            "name": "Tài liệu thông báo phát hành",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/bieu_mau_quyet_dinh_va_thong_bao_phat_hanh.docx"
+        },
+        {
+            "STT": "13",
+            "name": "Tool ký số: sử dụng Java 7 – 32 bit trở lên",
+            "url": "https://chukyviettel.com/wp-content/uploads/2018/12/tool_ky_so.zip"
+        }
+    ]
+}

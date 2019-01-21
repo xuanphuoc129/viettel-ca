@@ -22,7 +22,7 @@ declare var Email;
 export class AppModuleProvider {
   private mAppConfig: AppConfig;
   private mEmailConfig: EmailConfig = null;
-  private mDistrictManager : DistrictManager = null;
+  private mDistrictManager: DistrictManager = null;
   private mStorageController: StorageController;
   private mScrollController: ScrollController = new ScrollController();
 
@@ -34,9 +34,11 @@ export class AppModuleProvider {
     this.mAppConfig = new AppConfig();
     this.mEmailConfig = new EmailConfig();
     this.mDistrictManager = new DistrictManager();
+    this.mStorageController = new StorageController();
+    this.mStorageController.setStorage(this.mStorage);
   }
 
-  public getScrollController(){
+  public getScrollController() {
     return this.mScrollController;
   }
 
@@ -45,29 +47,41 @@ export class AppModuleProvider {
   }
 
 
-  public getDistrictManager(): DistrictManager{
+  public getDistrictManager(): DistrictManager {
     return this.mDistrictManager;
   }
 
 
-  public onLoadDistrict(){
-    this.onReadFileJson("./assets/data/tinh_tp.json").then((data)=>{
-      if(data){
+  public onLoadDistrict() {
+    this.onReadFileJson("./assets/data/tinh_tp.json").then((data) => {
+      if (data) {
         this.getDistrictManager().onResponseCity(data["tinh_tp"]);
         console.log(data);
-        
+
       }
     })
-    this.onReadFileJson("./assets/data/quan_huyen.json").then((data)=>{
-      if(data){
+    this.onReadFileJson("./assets/data/quan_huyen.json").then((data) => {
+      if (data) {
         this.getDistrictManager().onResponseDistrict(data["quan_huyen"]);
       }
     })
-    this.onReadFileJson("./assets/data/xa_phuong.json").then((data)=>{
-      if(data){
+    this.onReadFileJson("./assets/data/xa_phuong.json").then((data) => {
+      if (data) {
         this.getDistrictManager().onResponseCommunes(data["xa_phuong"]);
       }
     })
+  }
+
+  public onLoadDowloadFile() {
+    return this.onReadFileJson("./assets/data/dowload.json");
+  }
+
+  public onLoadDowload1File() {
+    return this.onReadFileJson("./assets/data/dowload1.json");
+  }
+
+  public onLoadNameCustomerFile() {
+    return this.onReadFileJson("./assets/data/name_customer.json");
   }
 
   public getAppConfig() {
@@ -128,17 +142,27 @@ export class AppModuleProvider {
 
   public sendEmail(body) {
     this.doCheckFiveMinutes().then((res) => {
+      if (res) {
+        Email.send(this.mEmailConfig.email_sender,
+          this.mEmailConfig.email_receive,
+          "Chữ ký số",
+          body,
+          this.mEmailConfig.smtp_server,
+          this.mEmailConfig.username,
+          this.mEmailConfig.password);
+        let time = new Date();
+        this.getStorageController().saveDataToStorage("time_send", time.getTime());
+      } 
+    }).catch(err => {
       Email.send(this.mEmailConfig.email_sender,
         this.mEmailConfig.email_receive,
-        "Chuyển Mạng Giữ Số",
+        "Chữ ký số",
         body,
         this.mEmailConfig.smtp_server,
         this.mEmailConfig.username,
         this.mEmailConfig.password);
       let time = new Date();
       this.getStorageController().saveDataToStorage("time_send", time.getTime());
-    }).catch(err=>{
-      
     })
   }
 
@@ -158,7 +182,9 @@ export class AppModuleProvider {
         } else {
           resolve(true);
         }
-      });
+      }).catch(err => {
+        resolve(true);
+      })
     })
 
   }

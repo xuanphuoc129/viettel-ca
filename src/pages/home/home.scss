@@ -346,7 +346,7 @@ page-home {
     }
 
     .f-notification {
-      color: map-get($map: $appcolors, $key: primary);
+      color: red;
       padding-top: 10px;
       font-size: 1.4rem;
     }
@@ -476,8 +476,13 @@ page-home {
       }
       
     }
-    .m-table-price {
+    .f-table-price {
       background: whitesmoke !important;
+      padding: 20px 10px !important;
+      .semi-title{
+        font-size: 2rem !important;
+        padding-bottom: 10px !important;
+      }
     }
 
     .f-register {

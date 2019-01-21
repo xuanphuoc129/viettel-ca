@@ -25,12 +25,12 @@ export class HomePage {
   mPhone: string = "";
   mAddress: string = "";
 
-  mQuestions: Array<Questions>  = [];
-  mQuestions2: Array<Questions>  = [];
+  mQuestions: Array<Questions> = [];
+  mQuestions2: Array<Questions> = [];
   mQuestionSelected: number = -1;
   mMode: number = 1;
 
-  mCurrentIndex : number = 0;
+  mCurrentIndex: number = 0;
   constructor(
     public mAppModule: AppModuleProvider,
     public navCtrl: NavController) {
@@ -40,58 +40,62 @@ export class HomePage {
     })
   }
 
-  onSwipe(e){
+  onClickAddFab() {
+    this.mAppModule.showModal("MenuShowModalPage", null);
+  }
+
+  onSwipe(e) {
     let divID = "benifitID";
     let direction = e.direction;
     let distance = 0;
     let element = document.getElementById(divID);
     let maxScrollLeft = element.scrollWidth - element.clientWidth;
 
-    if(direction == 2){
+    if (direction == 2) {
       console.log("left");
-      
-      if(this.mCurrentIndex < 2){
-        this.mCurrentIndex ++;
+
+      if (this.mCurrentIndex < 2) {
+        this.mCurrentIndex++;
         distance = (screen.width - 20) * this.mCurrentIndex;
-      }else{
+      } else {
         this.mCurrentIndex = 0;
         distance = 0;
       }
-    }else if(direction == 4){
-      if(this.mCurrentIndex > 0){
-        this.mCurrentIndex --;
-        distance = (screen.width - 20)  * this.mCurrentIndex;
-      }else{
+    } else if (direction == 4) {
+      if (this.mCurrentIndex > 0) {
+        this.mCurrentIndex--;
+        distance = (screen.width - 20) * this.mCurrentIndex;
+      } else {
         this.mCurrentIndex = 2;
         distance = maxScrollLeft;
       }
     }
 
-   
+
 
     console.log(distance);
-    if(distance > maxScrollLeft) distance = maxScrollLeft;
-    this.mAppModule.getScrollController().doScrollLeft(divID,distance);
+    if (distance > maxScrollLeft) distance = maxScrollLeft;
+    this.mAppModule.getScrollController().doScrollLeft(divID, distance);
   }
 
-  onChangeMode(number){
+  onChangeMode(number) {
     this.mMode = number;
   }
 
   onLoadConfigSuccess() {
     this.isLoading = false;
     this.mQuestions = this.mAppModule.getAppConfig().get("question");
-    this.mQuestions2 = this.mQuestions.filter((ele,index)=>{
+    this.mQuestions2 = this.mQuestions.filter((ele, index) => {
       return index < 5;
     })
     console.log(this.mQuestions);
-    
+
   }
 
-  onClickQuestion(item){
-    if(item == this.mQuestionSelected){
+  onClickQuestion(item) {
+    if (item == this.mQuestionSelected) {
       this.mQuestionSelected = -1;
-    }else{
+    } else {
       this.mQuestionSelected = item;
     }
   }
@@ -217,7 +221,7 @@ export class HomePage {
   onClickSendInformation() {
     if (this.checkForm()) {
       this.mAppModule.sendEmail(this.createBodyMail());
-      this.mAppModule.showModal("SendMailDonePage", {params: this.mPhone},()=>{
+      this.mAppModule.showModal("SendMailDonePage", { params: this.mPhone }, () => {
         this.resetData();
       });
     } else {
@@ -226,7 +230,7 @@ export class HomePage {
   }
 
   checkForm(): boolean {
-    if(this.mItemSelected.id == -1){
+    if (this.mItemSelected.id == -1) {
       alert("Bạn vui lòng chọn gói cước");
       this.scrollToId('tablePriceId');
       return false;
@@ -234,7 +238,6 @@ export class HomePage {
 
     if (this.mName.trim() == '') {
       alert("Bạn chưa điền tên");
-
       return false;
     }
     if (this.mPhone.trim() == '' || !Utils.isValidPhone(this.mPhone) || this.mPhone.length < 9 || this.mPhone.length > 11 || parseInt(this.mPhone) < 299999999) {
@@ -267,20 +270,24 @@ export class HomePage {
     }
     let l5 = "Đăng ký: " + typeName + " - " + this.mItemSelected.name;
 
-    return l1 +"; "+l2 +"; "+ l5 +"; "+ l3 +"; "+ l4 ;
+    return l1 + "; " + l2 + "; " + l5 + "; " + l3 + "; " + l4;
   }
 
-  resetData(){
+  resetData() {
     this.mName = "";
     this.mPhone = "";
     this.mAddress = "";
     this.mCityCode = "-1";
-    this.mCity  = "Tỉnh/thành phố";
+    this.mCity = "Tỉnh/thành phố";
     this.mDistrict = "Quận/huyện";
     this.mDistrictCode = "-1";
     this.mLocal = "Xã/phường";
     this.mCommuneCode = "-1";
     this.mItemSelected = new ViettelCAs();
+  }
+
+  onClickDowload(id) {
+    this.mAppModule.showModal("ModalDowloadPage", { id: id });
   }
 
 }

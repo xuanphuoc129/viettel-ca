@@ -1,0 +1,78 @@
+page-modal-dowload {
+  .backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .popup-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: whitesmoke;
+  }
+  th{
+      background: map-get($map: $appcolors, $key: yellow);
+      color: black;
+      font-size: 1.4rem;
+      padding: 10px 16px;
+      white-space: nowrap;
+  }
+  th:first-child{
+      padding: 10px 0;
+  }
+  td{
+      padding: 10px 0;
+      font-size: 1.3rem;
+  }
+  .stt{
+      width: 50px;
+  }
+  .white-bg{
+      background: white;
+  }
+  .dowload-column{
+      width: 100px;
+  }
+  .title-dowload{
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.2rem;
+      padding: 16px;
+      position: relative;
+  }
+
+  .close-btn{
+      position: absolute;
+      right: 0;
+      top: 44%;
+      transform: translateY(-50%);
+  }
+  @media (max-width: 576px) {
+    .title-dowload{
+        font-size: 1.8rem !important;
+        padding: 16px 32px !important;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .scroll-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    ion-content.content {
+      background: rgba($color: #000000, $alpha: .4) !important;
+    }
+    .popup-container{
+        min-height: 500px;
+        max-height: 600px;
+    }
+  
+  }
+}

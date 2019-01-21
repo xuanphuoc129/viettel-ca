@@ -1,1 +1,35 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <div text-center>
+        <img src="./assets/imgs/logo-viettel-ca.png" alt="Viettel CA">
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list class="menu-btn-container">
+      <button ion-item menuClose  (click)="openPage('#')">
+        <ion-icon name="attach" item-start></ion-icon>
+        <ion-label>Quy định</ion-label>
+      </button>
+      <button ion-item menuClose (click)="onClickDowload(1)">
+        <ion-icon name="bulb" item-start></ion-icon>
+        <ion-label>Hướng dẫn</ion-label>
+      </button>
+      <button ion-item menuClose (click)="onClickDowload(0)">
+        <ion-icon name="download" item-start></ion-icon>
+        <ion-label>Tải về</ion-label>
+      </button>
+      <button ion-item menuClose (click)="openPage('#')">
+        <ion-icon name="paper" item-start></ion-icon>
+        <ion-label>Tin tức</ion-label>
+      </button>
+      <button ion-item menuClose>
+        <ion-icon name="close" item-start></ion-icon>
+        <ion-label>Đóng</ion-label>
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
