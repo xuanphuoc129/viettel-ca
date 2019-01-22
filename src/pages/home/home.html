@@ -26,416 +26,421 @@
 </ion-header>
 
 <ion-content>
+  <div class="a1-container">
+    <div class="sm-hidden f-banner-mobile a1-relative">
+      <div class="banner-overlay-mobile a1-absolute">
+        <div class="big-title">VIETTEL - CA</div>
+        <div class="semi-title">DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ</div>
+        <!-- <div class="small-font">Dịch vụ chứng thực số (CTS) Viettel-CA là dịch vụ cung cấp chứng thư số để
+              khách hàng là cá nhân hay doanh nghiệp có thể sử dụng để giao dịch điện tử.
+            </div> -->
+      </div>
 
-
-  <div class="sm-hidden f-banner-mobile a1-relative">
-    <div class="banner-overlay-mobile a1-absolute">
-      <div class="big-title">VIETTEL - CA</div>
-      <div class="semi-title">DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ</div>
-      <!-- <div class="small-font">Dịch vụ chứng thực số (CTS) Viettel-CA là dịch vụ cung cấp chứng thư số để
-            khách hàng là cá nhân hay doanh nghiệp có thể sử dụng để giao dịch điện tử.
-          </div> -->
+      <div class="xs-btn-bottom a1-absolute">
+        <button ion-button (click)="scrollToId('tablePriceId')">Đăng ký ngay</button>
+      </div>
     </div>
 
-    <div class="xs-btn-bottom a1-absolute">
-      <button ion-button (click)="scrollToId('tablePriceId')">Đăng ký ngay</button>
+    <div class="f-banner a1-relative xs-hidden">
+      <img src="./assets/imgs/solution.png" alt="Viettel CA">
+
+      <div class="a1-absolute a1-content-center" text-center>
+        <div class="big-title">VIETTEL - CA</div>
+        <div class="semi-title">DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ</div>
+        <div class="small-font">Dịch vụ chứng thực số (CTS) Viettel-CA là dịch vụ cung cấp chứng thư số để
+          khách hàng là cá nhân hay doanh nghiệp có thể sử dụng để giao dịch điện tử.</div>
+      </div>
+
+      <div class="a1-absolute bottom-button a3-container-center">
+        <!-- <button ion-button class="f-button price" (click)="scrollToId('tablePriceId')">Xem bảng giá</button> -->
+        <button ion-button class="f-button register" (click)="scrollToId('tablePriceId')">Đăng ký ngay</button>
+      </div>
     </div>
-  </div>
 
-  <div class="f-banner a1-relative xs-hidden">
-    <img src="./assets/imgs/solution.png" alt="Viettel CA">
-
-    <div class="a1-absolute a1-content-center" text-center>
-      <div class="big-title">VIETTEL - CA</div>
-      <div class="semi-title">DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ</div>
-      <div class="small-font">Dịch vụ chứng thực số (CTS) Viettel-CA là dịch vụ cung cấp chứng thư số để
-        khách hàng là cá nhân hay doanh nghiệp có thể sử dụng để giao dịch điện tử.</div>
-    </div>
-
-    <div class="a1-absolute bottom-button a3-container-center">
-      <!-- <button ion-button class="f-button price" (click)="scrollToId('tablePriceId')">Xem bảng giá</button> -->
-      <button ion-button class="f-button register" (click)="scrollToId('tablePriceId')">Đăng ký ngay</button>
-    </div>
-  </div>
-
-  <div class="sm-hidden m-features">
-    <div class="semi-title">TÍNH NĂNG</div>
-    <ion-row>
-      <ion-col col-6 text-center>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/global.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Dịch vụ hành chính công điện tử
-        </div>
-        <div class="f-description">
-          Kê khai thuế qua mạng, hải quan điện tử, đấu thấu trực tuyến, kê khai bảo hiểm xã hội điện tử,
-          nộp thuế điện tử…
-        </div>
-      </ion-col>
-      <ion-col col-6 text-center>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/email.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Giao dịch điện tử
-        </div>
-        <div class="f-description">
-          Gửi email, giao dịch chứng khoán, ngân hàng điện tử, ký hợp đồng văn bản, thanh toán trực tuyến.
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <div margin-top class="semi-title">LỢI ÍCH</div>
-    <ion-row nowrap (swipe)="onSwipe($event)" style="overflow: hidden" id="benifitID">
-      <ion-col col-6>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/clock-fast.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Quy trình cấp phát CTS nhanh nhất
-        </div>
-        <div class="f-description">
-          Trong vòng 24h
-        </div>
-      </ion-col>
-
-      <ion-col col-6>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/give-money_fill.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Giá bán tốt nhất trên thị trường
-        </div>
-        <div class="f-description">
-          Thấp hơn đối thủ 5-10%
-        </div>
-      </ion-col>
-
-      <ion-col col-6>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/support_fill.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Kênh hỗ trợ rộng khắp
-        </div>
-        <div class="f-description">
-          Kênh bán hàng trực tiếp rộng khắp tới từng cửa hàng trên 63 chi nhánh
-        </div>
-      </ion-col>
-
-      <ion-col col-6>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/solution.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Tích hợp nhiều dịch vụ
-        </div>
-        <div class="f-description">
-          Viettel-CA được bán combo với các sản phẩm dịch vụ sẵn có của Viettel: SMS, Data, ADSL, FTTH, PSTN và
-          VTAX …
-        </div>
-      </ion-col>
-
-      <ion-col col-6>
-        <div class="circle a3-container-center">
-          <img src="./assets/icon/sim.png" alt="Viettel-CA">
-        </div>
-        <div class="f-bold-title">
-          Chứng thực chữ ký số trên SIM
-        </div>
-        <div class="f-description">
-          Viettel là nhà cung cấp đầu tiên triển khai giải pháp chứng thực chữ ký số trên SIM, tận dụng thế mạnh
-          về mạng viễn thông lớn nhất và sản xuất thiết bị.
-        </div>
-      </ion-col>
-    </ion-row>
-
-    <div class="dot-container">
-      <!--   -->
-      <div class="dot" [class.selected]="mCurrentIndex == 0"></div>
-      <div class="dot" [class.selected]="mCurrentIndex == 1"></div>
-      <div class="dot" [class.selected]="mCurrentIndex == 2"></div>
-    </div>
-  </div>
-
-  <div class="f-features a1-relative xs-hidden">
-    <img style="width: 100%" src="./assets/imgs/background-white.png" alt="Viettel CA">
-
-    <div class="overlay a1-absolute">
+    <div class="sm-hidden m-features">
+      <div class="semi-title">TÍNH NĂNG</div>
       <ion-row>
-        <ion-col col-sm-6>
-          <div class="semi-title">TÍNH NĂNG</div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/global.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Sử dụng trong dịch vụ hành chính công điện tử
-              </div>
-              <div class="f-description">
-                Kê khai thuế qua mạng, hải quan điện tử, đấu thấu trực tuyến, kê khai bảo hiểm xã hội điện tử,
-                nộp thuế điện tử…
-              </div>
-            </div>
+        <ion-col col-6 text-center>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/global.png" alt="Viettel-CA">
           </div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/email.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Sử dụng trong các giao dịch điện tử
-              </div>
-              <div class="f-description">
-                Gửi email, giao dịch chứng khoán, ngân hàng điện tử, ký hợp đồng văn bản, thanh toán trực tuyến.
-              </div>
-            </div>
+          <div class="f-bold-title">
+            Dịch vụ hành chính công điện tử
           </div>
-
+          <div class="f-description">
+            Kê khai thuế qua mạng, hải quan điện tử, đấu thấu trực tuyến, kê khai bảo hiểm xã hội điện tử,
+            nộp thuế điện tử…
+          </div>
         </ion-col>
-        <ion-col col-sm-6>
-          <div class="semi-title">LỢI ÍCH</div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/clock-fast.png" alt="Viettel-CA">
+        <ion-col col-6 text-center>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/email.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Giao dịch điện tử
+          </div>
+          <div class="f-description">
+            Gửi email, giao dịch chứng khoán, ngân hàng điện tử, ký hợp đồng văn bản, thanh toán trực tuyến.
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <div margin-top class="semi-title">LỢI ÍCH</div>
+      <ion-row nowrap (swipe)="onSwipe($event)" style="overflow: hidden" id="benifitID">
+        <ion-col col-6>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/clock-fast.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Quy trình cấp phát CTS nhanh nhất
+          </div>
+          <div class="f-description">
+            Trong vòng 24h
+          </div>
+        </ion-col>
+
+        <ion-col col-6>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/give-money_fill.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Giá bán tốt nhất trên thị trường
+          </div>
+          <div class="f-description">
+            Thấp hơn đối thủ 5-10%
+          </div>
+        </ion-col>
+
+        <ion-col col-6>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/support_fill.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Kênh hỗ trợ rộng khắp
+          </div>
+          <div class="f-description">
+            Kênh bán hàng trực tiếp rộng khắp tới từng cửa hàng trên 63 chi nhánh
+          </div>
+        </ion-col>
+
+        <ion-col col-6>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/solution.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Tích hợp nhiều dịch vụ
+          </div>
+          <div class="f-description">
+            Viettel-CA được bán combo với các sản phẩm dịch vụ sẵn có của Viettel: SMS, Data, ADSL, FTTH, PSTN và
+            VTAX …
+          </div>
+        </ion-col>
+
+        <ion-col col-6>
+          <div class="circle a3-container-center">
+            <img src="./assets/icon/sim.png" alt="Viettel-CA">
+          </div>
+          <div class="f-bold-title">
+            Chứng thực chữ ký số trên SIM
+          </div>
+          <div class="f-description">
+            Viettel là nhà cung cấp đầu tiên triển khai giải pháp chứng thực chữ ký số trên SIM, tận dụng thế mạnh
+            về mạng viễn thông lớn nhất và sản xuất thiết bị.
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <div class="dot-container">
+        <!--   -->
+        <div class="dot" [class.selected]="mCurrentIndex == 0"></div>
+        <div class="dot" [class.selected]="mCurrentIndex == 1"></div>
+        <div class="dot" [class.selected]="mCurrentIndex == 2"></div>
+      </div>
+    </div>
+
+    <div class="f-features a1-relative xs-hidden">
+      <img style="width: 100%" src="./assets/imgs/background-white.png" alt="Viettel CA">
+
+      <div class="overlay a1-absolute">
+        <ion-row>
+          <ion-col col-sm-6>
+            <div class="semi-title">TÍNH NĂNG</div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/global.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Sử dụng trong dịch vụ hành chính công điện tử
+                </div>
+                <div class="f-description">
+                  Kê khai thuế qua mạng, hải quan điện tử, đấu thấu trực tuyến, kê khai bảo hiểm xã hội điện tử,
+                  nộp thuế điện tử…
+                </div>
+              </div>
             </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Quy trình cấp phát CTS nhanh nhất
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/email.png" alt="Viettel-CA">
               </div>
-              <div class="f-description">
-                Trong vòng 24h
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Sử dụng trong các giao dịch điện tử
+                </div>
+                <div class="f-description">
+                  Gửi email, giao dịch chứng khoán, ngân hàng điện tử, ký hợp đồng văn bản, thanh toán trực tuyến.
+                </div>
               </div>
+            </div>
+
+          </ion-col>
+          <ion-col col-sm-6>
+            <div class="semi-title">LỢI ÍCH</div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/clock-fast.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Quy trình cấp phát CTS nhanh nhất
+                </div>
+                <div class="f-description">
+                  Trong vòng 24h
+                </div>
+              </div>
+            </div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/give-money_fill.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Giá bán tốt nhất trên thị trường
+                </div>
+                <div class="f-description">
+                  Thấp hơn đối thủ 5-10%
+                </div>
+              </div>
+            </div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/support_fill.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Kênh hỗ trợ rộng khắp
+                </div>
+                <div class="f-description">
+                  Kênh bán hàng trực tiếp rộng khắp tới từng cửa hàng trên 63 chi nhánh
+                </div>
+              </div>
+            </div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/solution.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Tích hợp nhiều dịch vụ
+                </div>
+                <div class="f-description">
+                  Viettel-CA được bán combo với các sản phẩm dịch vụ sẵn có của Viettel: SMS, Data, ADSL, FTTH, PSTN và
+                  VTAX …
+                </div>
+              </div>
+            </div>
+            <!-- ============= -->
+            <div class="a3-container a3-items-center f-item-row">
+              <div class="circle">
+                <img src="./assets/icon/sim.png" alt="Viettel-CA">
+              </div>
+              <div class="f-row-content">
+                <div class="f-bold-title">
+                  Chứng thực chữ ký số trên SIM
+                </div>
+                <div class="f-description">
+                  Viettel là nhà cung cấp đầu tiên triển khai giải pháp chứng thực chữ ký số trên SIM, tận dụng thế
+                  mạnh
+                  về mạng viễn thông lớn nhất và sản xuất thiết bị.
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+
+
+    <div class="f-table-price" id="tablePriceId">
+      <div class="semi-title">BẢNG GIÁ</div>
+      <!-- <div class="a3-container a3-items-center f-menu-list">
+        <div class="f-menu-item" [class.selected]="menuID == 1" (click)="onClickItem(1)" tappable>USB TOKEN CỦA CÁ NHÂN</div>
+        <div class="f-menu-item" [class.selected]="menuID == 2" (click)="onClickItem(2)" tappable>USB TOKEN CỦA TỔ CHỨC</div>
+        <div class="f-menu-item" [class.selected]="menuID == 3" (click)="onClickItem(3)" tappable>SIM CA CÁ NHÂN</div>
+        <div class="f-menu-item" [class.selected]="menuID == 4" (click)="onClickItem(4)" tappable>SIM CA TỔ CHỨC</div>
+      </div> -->
+
+      <div *ngIf="!isLoading">
+        <viettel-ca (onRegister)="onClickRegister($event)"></viettel-ca>
+      </div>
+
+    </div>
+
+    <div class="f-register" id="registerId">
+      <div class="semi-title">
+        Thông tin khách hàng
+      </div>
+
+      <ion-row align-items-start>
+        <ion-col col-12 col-sm-8>
+          <div class="box-shadow-container">
+            <div class="f-form-title">
+              Họ và tên <span class="red-color">(*)</span>
+            </div>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="mName" placeholder="Họ tên đầy đủ của bạn"></ion-input>
+            </ion-item>
+            <div class="f-form-title">
+              Số điện thoại <span class="red-color">(*)</span>
+            </div>
+            <ion-item>
+              <ion-input type="number" [(ngModel)]="mPhone" placeholder="Nhân viên Viettel sẽ liên lạc theo số điện thoại này"></ion-input>
+            </ion-item>
+            <div class="f-form-title">
+              Địa chỉ <span class="red-color">(*)</span>
+            </div>
+
+            <div class="f-district" (click)="onClickCity()" tappable [class.selected]="mCity != 'Tỉnh/thành phố'">
+              {{mCity}}
+              <div class="a1-absolute icon-container">
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </div>
+            </div>
+            <div class="f-district" (click)="onClickDistrict()" tappable [class.selected]="mDistrict != 'Quận/huyện'">
+              {{mDistrict}}
+              <div class="a1-absolute icon-container">
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </div>
+            </div>
+            <div class="f-district" (click)="onClickCommune()" tappable [class.selected]="mLocal != 'Xã/phường'">
+              {{mLocal}}
+              <div class="a1-absolute icon-container">
+                <ion-icon name="md-arrow-dropdown"></ion-icon>
+              </div>
+            </div>
+
+            <div class="f-form-title">
+              Địa chỉ chi tiết
+            </div>
+            <ion-item>
+              <ion-input type="text" [(ngModel)]="mAddress" placeholder="Số nhà, tên đường, tổ/thôn "></ion-input>
+            </ion-item>
+
+            <div class="f-notification">
+              <i>(*) Những nội dung bắt buộc</i>
+            </div>
+
+
+            <div class="btn-send">
+              <button ion-button icon-end (click)="onClickSendInformation()">Đăng ký
+                <ion-icon name="ios-send"></ion-icon>
+              </button>
             </div>
           </div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/give-money_fill.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Giá bán tốt nhất trên thị trường
-              </div>
-              <div class="f-description">
-                Thấp hơn đối thủ 5-10%
-              </div>
-            </div>
+        </ion-col>
+        <ion-col col-12 col-sm-4>
+          <div class="box-shadow-container" *ngIf="mItemSelected.id == -1">
+            <div text-center padding>Bạn chưa chọn gói cước</div>
           </div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/support_fill.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Kênh hỗ trợ rộng khắp
-              </div>
-              <div class="f-description">
-                Kênh bán hàng trực tiếp rộng khắp tới từng cửa hàng trên 63 chi nhánh
-              </div>
-            </div>
-          </div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/solution.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Tích hợp nhiều dịch vụ
-              </div>
-              <div class="f-description">
-                Viettel-CA được bán combo với các sản phẩm dịch vụ sẵn có của Viettel: SMS, Data, ADSL, FTTH, PSTN và
-                VTAX …
-              </div>
-            </div>
-          </div>
-          <!-- ============= -->
-          <div class="a3-container a3-items-center f-item-row">
-            <div class="circle">
-              <img src="./assets/icon/sim.png" alt="Viettel-CA">
-            </div>
-            <div class="f-row-content">
-              <div class="f-bold-title">
-                Chứng thực chữ ký số trên SIM
-              </div>
-              <div class="f-description">
-                Viettel là nhà cung cấp đầu tiên triển khai giải pháp chứng thực chữ ký số trên SIM, tận dụng thế mạnh
-                về mạng viễn thông lớn nhất và sản xuất thiết bị.
-              </div>
-            </div>
+          <div *ngIf="mItemSelected.id > -1">
+            <viettel-ca-package [item]="mItemSelected"></viettel-ca-package>
           </div>
         </ion-col>
       </ion-row>
     </div>
-  </div>
 
+    <div class="f-process">
+      <div class="f-body-text">
+        <div class="semi-title">
+          Quy Trình Và Thủ Tục Đăng Ký Chữ Ký Số Viettel - CA
+        </div>
 
-  <div class="f-table-price" id="tablePriceId">
-    <div class="semi-title">BẢNG GIÁ</div>
-    <!-- <div class="a3-container a3-items-center f-menu-list">
-      <div class="f-menu-item" [class.selected]="menuID == 1" (click)="onClickItem(1)" tappable>USB TOKEN CỦA CÁ NHÂN</div>
-      <div class="f-menu-item" [class.selected]="menuID == 2" (click)="onClickItem(2)" tappable>USB TOKEN CỦA TỔ CHỨC</div>
-      <div class="f-menu-item" [class.selected]="menuID == 3" (click)="onClickItem(3)" tappable>SIM CA CÁ NHÂN</div>
-      <div class="f-menu-item" [class.selected]="menuID == 4" (click)="onClickItem(4)" tappable>SIM CA TỔ CHỨC</div>
-    </div> -->
+        <div class="step-title">
+          1. Khách hàng cần chuẩn bị nhưng giấy tờ sau:
+        </div>
+        <div class="step-des">
+          + 1 giấy phép kinh doanh (Photo và đón dấu treo của doanh nghiệp) <br>
+          + 1 giấy chứng minh thư nhân dân của người đại diện doanh nghiệp (Photo đóng dấu treo)
+        </div>
 
-    <div *ngIf="!isLoading">
-      <viettel-ca (onRegister)="onClickRegister($event)"></viettel-ca>
+        <div class="step-title" margin-top>
+          2. Nhân viên Viettel sẽ tiếp xúc trực tiếp với khách hàng và ký kết hợp đồng:
+        </div>
+        <div class="step-des">
+          + 2 bản hợp đồng dịch vụ Viettel CA có đóng dấu xác nhận của 2 bên (Mỗi bên giữ một bản) <br>
+          + 2 phiếu yêu cầu cung cấp dịch vụ Viettel CA có đóng dấu xác nhận của 2 bên (Mỗi bên giữ một bản)
+        </div>
+        <div class="step-title" margin-top>
+          3. Viettel sẽ tiến hành cung cấp Chữ Ký Số Viettel cho khách hàng:
+        </div>
+        <div class="step-des">
+          + Thời gian Viettel cung cấp dịch vụ và bàn giao trong vòng từ 2 đến 24 giờ.
+        </div>
+        <div class="step-title" margin-top>
+          4. Nhân viên Viettel sẽ tiến hành bàn giao cho khách hàng:
+        </div>
+        <div class="step-des">
+          + 1 thiết bị USB Token chữ ký số Viettel <br>
+          + 1 giấy chứng nhận sử dụng chữ ký số Viettel <br>
+          + 1 biên bản bàn giao chữ ký số Viettel <br>
+          + 1 hóa đơn VAT của Viettel
+        </div>
+      </div>
     </div>
 
-  </div>
-
-  <div class="f-register" id="registerId">
-    <div class="semi-title">
-      Thông tin khách hàng
-    </div>
-
-    <ion-row align-items-start>
-      <ion-col col-12 col-sm-8>
-        <div class="box-shadow-container">
-          <div class="f-form-title">
-            Họ và tên <span class="red-color">(*)</span>
-          </div>
-          <ion-item>
-            <ion-input type="text" [(ngModel)]="mName" placeholder="Họ tên đầy đủ của bạn"></ion-input>
-          </ion-item>
-          <div class="f-form-title">
-            Số điện thoại <span class="red-color">(*)</span>
-          </div>
-          <ion-item>
-            <ion-input type="number" [(ngModel)]="mPhone" placeholder="Nhân viên Viettel sẽ liên lạc theo số điện thoại này"></ion-input>
-          </ion-item>
-          <div class="f-form-title">
-            Địa chỉ <span class="red-color">(*)</span>
-          </div>
-
-          <div class="f-district" (click)="onClickCity()" tappable [class.selected]="mCity != 'Tỉnh/thành phố'">
-            {{mCity}}
-            <div class="a1-absolute icon-container">
-              <ion-icon name="md-arrow-dropdown"></ion-icon>
-            </div>
-          </div>
-          <div class="f-district" (click)="onClickDistrict()" tappable [class.selected]="mDistrict != 'Quận/huyện'">
-            {{mDistrict}}
-            <div class="a1-absolute icon-container">
-              <ion-icon name="md-arrow-dropdown"></ion-icon>
-            </div>
-          </div>
-          <div class="f-district" (click)="onClickCommune()" tappable [class.selected]="mLocal != 'Xã/phường'">
-            {{mLocal}}
-            <div class="a1-absolute icon-container">
-              <ion-icon name="md-arrow-dropdown"></ion-icon>
-            </div>
-          </div>
-
-          <div class="f-form-title">
-            Địa chỉ chi tiết
-          </div>
-          <ion-item>
-            <ion-input type="text" [(ngModel)]="mAddress" placeholder="Số nhà, tên đường, tổ/thôn "></ion-input>
-          </ion-item>
-
-          <div class="f-notification">
-            <i>(*) Những nội dung bắt buộc</i>
-          </div>
-
-
-          <div class="btn-send">
-            <button ion-button icon-end (click)="onClickSendInformation()">Đăng ký
-              <ion-icon name="ios-send"></ion-icon>
-            </button>
-          </div>
-        </div>
-      </ion-col>
-      <ion-col col-12 col-sm-4>
-        <div class="box-shadow-container" *ngIf="mItemSelected.id == -1">
-          <div text-center padding>Bạn chưa chọn gói cước</div>
-        </div>
-        <div *ngIf="mItemSelected.id > -1">
-          <viettel-ca-package [item]="mItemSelected"></viettel-ca-package>
-        </div>
-      </ion-col>
-    </ion-row>
-  </div>
-
-  <div class="f-process">
-    <div class="f-body-text">
+    <div class="f-question">
       <div class="semi-title">
-        Quy Trình Và Thủ Tục Đăng Ký Chữ Ký Số Viettel - CA
+        Câu hỏi thường gặp
       </div>
 
-      <div class="step-title">
-        1. Khách hàng cần chuẩn bị nhưng giấy tờ sau:
-      </div>
-      <div class="step-des">
-        + 1 giấy phép kinh doanh (Photo và đón dấu treo của doanh nghiệp) <br>
-        + 1 giấy chứng minh thư nhân dân của người đại diện doanh nghiệp (Photo đóng dấu treo)
-      </div>
-
-      <div class="step-title" margin-top>
-        2. Nhân viên Viettel sẽ tiếp xúc trực tiếp với khách hàng và ký kết hợp đồng:
-      </div>
-      <div class="step-des">
-        + 2 bản hợp đồng dịch vụ Viettel CA có đóng dấu xác nhận của 2 bên (Mỗi bên giữ một bản) <br>
-        + 2 phiếu yêu cầu cung cấp dịch vụ Viettel CA có đóng dấu xác nhận của 2 bên (Mỗi bên giữ một bản)
-      </div>
-      <div class="step-title" margin-top>
-        3. Viettel sẽ tiến hành cung cấp Chữ Ký Số Viettel cho khách hàng:
-      </div>
-      <div class="step-des">
-        + Thời gian Viettel cung cấp dịch vụ và bàn giao trong vòng từ 2 đến 24 giờ.
-      </div>
-      <div class="step-title" margin-top>
-        4. Nhân viên Viettel sẽ tiến hành bàn giao cho khách hàng:
-      </div>
-      <div class="step-des">
-        + 1 thiết bị USB Token chữ ký số Viettel <br>
-        + 1 giấy chứng nhận sử dụng chữ ký số Viettel <br>
-        + 1 biên bản bàn giao chữ ký số Viettel <br>
-        + 1 hóa đơn VAT của Viettel
-      </div>
-    </div>
-  </div>
-
-  <div class="f-question">
-    <div class="semi-title">
-      Câu hỏi thường gặp
-    </div>
-
-    <div class="list-container " *ngIf="mMode == 1">
-      <div class="question-container a1-relative" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions2; let i = index"
-        (click)="onClickQuestion(i)">
-        <div class="question" [innerHtml]="item.question"></div>
-        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
-        <div class="icon-container a1-absolute">
-          <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
-          <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+      <div class="list-container " *ngIf="mMode == 1">
+        <div class="question-container a1-relative" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions2; let i = index"
+          (click)="onClickQuestion(i)">
+          <div class="question" [innerHtml]="item.question"></div>
+          <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
+          <div class="icon-container a1-absolute">
+            <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
+            <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="list-container " *ngIf="mMode == 2">
-      <div class="question-container" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions; let i = index"
-        (click)="onClickQuestion(i)">
-        <div class="question" [innerHtml]="item.question"></div>
-        <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
-        <div class="icon-container a1-absolute">
-          <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
-          <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+      <div class="list-container " *ngIf="mMode == 2">
+        <div class="question-container" [class.selected]="i == mQuestionSelected" *ngFor="let item of mQuestions; let i = index"
+          (click)="onClickQuestion(i)">
+          <div class="question" [innerHtml]="item.question"></div>
+          <div class="answer" [innerHtml]="item.answer" *ngIf="mQuestionSelected == i"></div>
+          <div class="icon-container a1-absolute">
+            <ion-icon name="ios-arrow-down" *ngIf="mQuestionSelected != i"></ion-icon>
+            <ion-icon name="ios-arrow-up" *ngIf="mQuestionSelected == i"></ion-icon>
+          </div>
         </div>
+      </div>
+
+      <div class="btn-more-container" text-center>
+        <button ion-button *ngIf="mMode == 1" (click)="onChangeMode(2)">Xem thêm</button>
+        <button ion-button *ngIf="mMode == 2" (click)="onChangeMode(1)">Thu gọn</button>
       </div>
     </div>
 
-    <div class="btn-more-container" text-center>
-      <button ion-button *ngIf="mMode == 1" (click)="onChangeMode(2)">Xem thêm</button>
-      <button ion-button *ngIf="mMode == 2" (click)="onChangeMode(1)">Thu gọn</button>
+    <div class="fake-customer">
+      <fake-customer></fake-customer>
     </div>
   </div>
 
@@ -447,8 +452,6 @@
 
 
 
-  <div class="fake-customer">
-    <fake-customer></fake-customer>
-  </div>
+
 
 </ion-content>
