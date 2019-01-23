@@ -7,13 +7,15 @@ import { SimPersonComponent } from './sim-person/sim-person';
 import { SimBusinessComponent } from './sim-business/sim-business';
 import { ViettelCaPackageComponent } from './viettel-ca-package/viettel-ca-package';
 import { FakeCustomerComponent } from './fake-customer/fake-customer';
+import { WebTelephoneComponent } from './web-telephone/web-telephone';
 @NgModule({
 	declarations: [ViettelCaComponent,
     ViettelProComponent,
     SimPersonComponent,
     SimBusinessComponent,
     ViettelCaPackageComponent,
-    FakeCustomerComponent],
+    FakeCustomerComponent,
+    WebTelephoneComponent],
 	imports: [
 		IonicModule,
 		CommonModule
@@ -23,6 +25,7 @@ import { FakeCustomerComponent } from './fake-customer/fake-customer';
     SimPersonComponent,
     SimBusinessComponent,
     ViettelCaPackageComponent,
-    FakeCustomerComponent]
+    FakeCustomerComponent,
+    WebTelephoneComponent]
 })
 export class ComponentsModule {}

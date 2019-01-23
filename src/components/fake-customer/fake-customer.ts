@@ -29,7 +29,6 @@ export class FakeCustomerComponent {
     this.mAppModule.onLoadNameCustomerFile().then((data) => {
       if (data) {
         this.names = data["danhsach"];
-
       }
     }).catch(err => {
 
@@ -43,9 +42,13 @@ export class FakeCustomerComponent {
   }
 
   ngAfterViewInit() {
+    setTimeout(() => {
+      this.onLoadName();
+    }, 3000);
+
     setInterval(() => {
       this.onLoadName();
-    }, 15000)
+    }, 45000)
   }
 
   onResponseCitys(data) {

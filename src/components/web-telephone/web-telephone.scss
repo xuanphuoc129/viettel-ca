@@ -1,0 +1,49 @@
+web-telephone {
+    .call-animation {
+        background: #f53d3d;
+        width: 48px;
+        height: 48px;
+        position: relative;
+        margin: 0 auto;
+        border-radius: 100%;
+        border: solid 5px #f53d3d;
+        animation: play 2s ease infinite;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: white;
+        }
+      
+    }
+
+    .phone-number{
+        margin-left: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 1.8rem;
+        background: #f53d3d;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+    @keyframes play {
+
+        0% {
+            transform: scale(1);
+        }
+        15% {
+            box-shadow: 0 0 0 5px rgba($color: #f53d3d, $alpha: 0.4);
+        }
+        25% {
+            box-shadow: 0 0 0 10px rgba($color: #f53d3d, $alpha: 0.4), 0 0 0 20px rgba($color: #f53d3d, $alpha: 0.2);
+        }
+        25% {
+            box-shadow: 0 0 0 15px rgba($color: #f53d3d, $alpha: 0.4), 0 0 0 30px rgba($color: #f53d3d, $alpha: 0.2);
+        }
+    
+    }
+}
