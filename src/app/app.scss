@@ -235,7 +235,7 @@
 }
 
 .fake-customer{
-  position: sticky;
+  position: fixed;
   bottom: 10px;
   left: 10px;
   margin-left: 10px;
@@ -252,5 +252,8 @@
   width: 48px;
   line-height: 48px;
   background: #f57727;
+}
+.btn-menu{
+  
 }
 

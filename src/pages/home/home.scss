@@ -207,7 +207,6 @@ page-home {
       color: #FF6D02;
       text-align: center;
       padding: 16px 10px;
-
     }
 
     .f-cts {
@@ -504,5 +503,8 @@ page-home {
         flex-direction: column-reverse;
       }
     }
+  }
+  .a1-container{
+    overflow-y: scroll;
   }
 }
